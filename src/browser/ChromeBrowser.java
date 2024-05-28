@@ -36,6 +36,19 @@ public class ChromeBrowser {
         String pageSource = driver.getPageSource();
         System.out.println("Page Source Length: " + pageSource.length());
 
+        // Navigiranje do neke sub page
+        driver.navigate().to("https://amplitudo.me/about-us/");
+        System.out.println("Sub-page: https://amplitudo.me//");
+
+        // Navigiranje nazad
+        driver.navigate().back();
+
+        // Navigiranje naprijed
+        driver.navigate().forward();
+
+        // Refresh
+        driver.navigate().refresh();
+
         driver.quit();
     }
 }
