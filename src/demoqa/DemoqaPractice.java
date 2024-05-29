@@ -67,12 +67,19 @@ public class DemoqaPractice {
             // Radio buttons
             WebElement radioBtns = driver.findElement(By.name("gender"));
             WebElement secondRadioBtnLabel = driver.findElement(By.xpath("//label[@for='gender-radio-2']"));
+            WebElement secondRadioBtn = driver.findElement(By.id("gender-radio-2"));
 
             if (radioBtns.isEnabled()) {
                 System.out.println("Radio buttons su enabled.");
                 secondRadioBtnLabel.click();
             } else {
                 System.out.println("Radio buttons nisu enabled.");
+            }
+
+            if (secondRadioBtn.isSelected()) {
+                System.out.println("Drugi radio button je selektovan.");
+            } else {
+                System.out.println("Radio button nije selektovan.");
             }
 
             Thread.sleep(3000);
