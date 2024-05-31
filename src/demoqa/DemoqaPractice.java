@@ -12,12 +12,14 @@ import java.util.List;
 
 public class DemoqaPractice {
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) {
         // ChromeDriver
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\User.DESKTOP-VN57FBP\\Downloads\\chromedriver.exe");
 
         // Instanca Chrome browsera
         WebDriver driver = new ChromeDriver();
+
+        try {
 
             driver.get("https://demoqa.com/automation-practice-form");
 
@@ -82,9 +84,11 @@ public class DemoqaPractice {
 
             Thread.sleep(3000);
 
-
+        } catch (Exception e) {
+            System.out.println("Doslo je do greske: " + e.getMessage());
+        } finally {
 
             driver.quit();
-
+        }
     }
 }
