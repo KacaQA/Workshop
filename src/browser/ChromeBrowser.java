@@ -10,7 +10,7 @@ public class ChromeBrowser {
         // ChromeDriver
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\User.DESKTOP-VN57FBP\\Downloads\\chromedriver.exe");
 
-        // Onstanca Chrome browsera
+        // Instanca Chrome browsera
         WebDriver driver = new ChromeDriver();
 
         // Otvaranje stranice
