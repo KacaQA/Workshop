@@ -13,8 +13,6 @@ import java.util.List;
 public class DemoqaPractice {
 
     public static void main(String[] args) {
-        // ChromeDriver
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\User.DESKTOP-VN57FBP\\Downloads\\chromedriver.exe");
 
         // Instanca Chrome browsera
         WebDriver driver = new ChromeDriver();

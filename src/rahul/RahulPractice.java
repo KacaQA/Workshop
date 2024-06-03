@@ -9,7 +9,6 @@ import java.util.List;
 
 public class RahulPractice {
     public static void main(String[] args) {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\User.DESKTOP-VN57FBP\\Downloads\\chromedriver.exe");
 
         // Instanca Chrome browsera
         WebDriver driver = new ChromeDriver();
@@ -56,9 +55,6 @@ public class RahulPractice {
         for (WebElement name : names) {
             System.out.println(name.getText());
         }
-
-
-
         driver.quit();
 
 
