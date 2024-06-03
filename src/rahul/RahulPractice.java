@@ -43,6 +43,14 @@ public class RahulPractice {
         List<WebElement> checkboxList = driver.findElements(By.xpath("//input[@type='checkbox']"));
         System.out.println("Size of the second list: " + checkboxList.size());
 
+        // Print all prices from the first table - my exercise
+        List<WebElement> prices = driver.findElements(By.xpath("//table[@name='courses']//td[3]"));
+        System.out.println("Prices are: ");
+        for (WebElement price : prices) {
+            System.out.println(price.getText());
+        }
+
+
 
         driver.quit();
 
