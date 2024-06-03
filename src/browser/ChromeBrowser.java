@@ -34,11 +34,11 @@ public class ChromeBrowser {
 
         // Dobijanje page source-a
         String pageSource = driver.getPageSource();
-        System.out.println("Page Source Length: " + pageSource.length());
+        System.out.println("Page source length: " + pageSource.length());
 
         // Navigiranje do neke sub page
         driver.navigate().to("https://amplitudo.me/about-us/");
-        System.out.println("Sub-page: https://amplitudo.me//");
+        System.out.println("Sub page: https://amplitudo.me/about-us/");
 
         // Navigiranje nazad
         driver.navigate().back();
