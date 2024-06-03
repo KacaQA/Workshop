@@ -50,6 +50,13 @@ public class RahulPractice {
             System.out.println(price.getText());
         }
 
+        // Print names from the second table - my exercise
+        List<WebElement> names = driver.findElements(By.xpath("//div[@class='tableFixHead']//table[@id='product']//td[1]"));
+        System.out.println("Names: ");
+        for (WebElement name : names) {
+            System.out.println(name.getText());
+        }
+
 
 
         driver.quit();
